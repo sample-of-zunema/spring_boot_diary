@@ -15,6 +15,7 @@ import lombok.Data;
 @Data
 @Table(name = "user")
 public class User {
+
     /**
      * ID
      */
