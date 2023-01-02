@@ -34,4 +34,5 @@ public class Diary {
 
     @Column(name = "create_datetime", nullable = false)
     private LocalDateTime createDatetime;
+
 }
