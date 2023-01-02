@@ -17,6 +17,7 @@ public class DiaryController {
     @Autowired
     DiaryService diaryService;
 
+    @RequestMapping("/index")
     public String index(Model model) {
 
         List<Diary> diary = diaryService.diaryAll();
