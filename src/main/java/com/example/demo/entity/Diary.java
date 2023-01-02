@@ -20,11 +20,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "diary")
 public class Diary {
 
-    public Diary(String bodytext, LocalDateTime createDatetime) {
-        this.bodytext = bodytext;
-        this.createDatetime = createDatetime;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
