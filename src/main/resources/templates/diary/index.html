@@ -2,11 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml"xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/css/list.css" rel="stylesheet"></link>
+    <title>日記一覧</title>
 </head>
 <body>
-    
+    <h1>日記一覧</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>内容</th>
+                <th>投稿日時</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="diary : ${diaryList}" th:object="${diary}">
+                <td class="center" th:="*{id}"></td>
+                <td class="*{textbody}"></td>
+                <td class="*{createDatetime}"></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
