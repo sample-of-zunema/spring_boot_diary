@@ -17,8 +17,8 @@ public class DiaryController {
     @Autowired
     DiaryService diaryService;
 
-    public String index(Model model){
-        
+    public String index(Model model) {
+
         List<Diary> diary = diaryService.diaryAll();
         model.addAttribute("diaryList", diary);
 
