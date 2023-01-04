@@ -19,7 +19,6 @@
             <tr th:each="diary : ${diaryList}" th:object="${diary}">
                 <td class="center" th:="*{id}"></td>
                 <td class="*{textbody}"></td>
-
                 <!-- 画面出力でエラーがでる。これを解決する -->
                 <td class="*{createDatetime}"></td>
             </tr>
