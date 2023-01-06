@@ -23,5 +23,10 @@
             </tr>
         </tbody>
     </table>
+    <h3>新規投稿</h3>
+    <form th:action="@{/diary/add}" method="post">
+        <input type="text" name="newdiary">
+        <button type="submit">投稿する</button>
+    </form>
 </body>
 </html>
