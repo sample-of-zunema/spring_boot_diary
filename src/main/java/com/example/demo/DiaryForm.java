@@ -1,9 +1,9 @@
-package com.example.demo.form;
+package com.example.demo;
 
 import java.time.LocalDateTime;
 
-public class diaryForm {
-    
+public class DiaryForm {
+
     private Integer id;
     private String bodytext;
     private LocalDateTime creDateTime;
