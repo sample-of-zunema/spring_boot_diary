@@ -36,16 +36,4 @@ public class DiaryController {
         return "diary/index";
     }
 
-    // 削除
-    // @RequestMapping("/delete")
-    // public String delete(@RequestParam Integer id){
-    //     diaryService.delete(id);
-    // }
-
-    //指定されたidの日記を削除する
-    @PostMapping("delete")
-    public String delete(@RequestParam String id) {
-        diaryRepository.deleteById(id);
-        return "redirect:/diary/summary";
-    }
 }

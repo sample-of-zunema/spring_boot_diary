@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.entity.Diary;
 import com.example.demo.repository.DiaryRepository;
@@ -16,9 +17,7 @@ public class DiaryServiceImpl implements DiaryService {
 
     @Override
     public List<Diary> diaryAll() {
-
         List<Diary> allDiary = diaryRepository.findAll();
-
         return allDiary;
     }
 
