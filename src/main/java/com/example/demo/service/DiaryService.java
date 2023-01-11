@@ -12,5 +12,4 @@ public interface DiaryService {
 
     List<Diary> diaryAll();
 
-    Optional<Diary> selectById(Integer id);
 }

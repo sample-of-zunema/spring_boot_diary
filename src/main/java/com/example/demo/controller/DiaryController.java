@@ -37,15 +37,4 @@ public class DiaryController {
         return "diary/index";
     }
 
-    // 編集
-    public String edit(@RequestParam Integer id, @ModelAttribute DiaryForm diaryForm) {
-
-        Optional<Diary> diaryOpt = diaryService.selectById(id);
-        Diary diary = diaryOpt.get();
-
-        // とりあえずこれで作成する（改修の必要がありそう）
-        BeanUtils.copyProperties(diary, diaryForm);
-        return "edit";
-    }
-
 }

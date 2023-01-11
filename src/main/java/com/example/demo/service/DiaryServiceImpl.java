@@ -22,9 +22,5 @@ public class DiaryServiceImpl implements DiaryService {
         return allDiary;
     }
 
-    @Override
-    public Optional<Diary> selectById(Integer id){
-        return diaryRepository.findById(id);
-    }
 
 }
